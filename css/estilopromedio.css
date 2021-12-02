@@ -1,0 +1,316 @@
+/* Inicio de CSS para Proyecto Videojuegos Mugen */
+/* Programación Web */
+/* Miercoles 06 de Noviembre de 2021 */
+
+*{
+    margin:auto;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: radial-gradient(circle at 37.72% 119.64%, #a4d8ec 0,
+    #a7d7ef 6.25%, #abd6f1 12.5%, #b0d5f3 18.75%, #b5d3f4 25%, #bbd2f4 
+    31.25%, #c1d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, 
+    #d9caed 62.5%, #dec8ea 68.75%, #e3c7e7 75%, #e8c6e3 81.25%, #ecc5df 87.5%,
+    #efc4da 93.75%, #f2c4d6 100%);
+}
+/*Cabecera del Documento */
+header
+    {
+        background-image: linear-gradient(to bottom, #051937, #1a3762, #2e5891, #417cc3, #52a2f7);
+        text-align: center;
+        text-decoration: bold;
+        font-size: 18px;
+        color:#ffffff;
+        height: 90px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @font-face{
+        font-family:Tarrget3D ;
+        src:url(../fonts/Tarrget3D.otf) ;
+        }
+    
+    header h1
+        {
+        text-align: center;
+        color: #ffffff;
+        padding: 0.5em;
+        font-size: 3.2em;
+        font-family: Tarrget3D;
+        }
+
+#img{
+    margin: 0 auto 0 auto;
+    width: 260px;
+    height: 260px;
+    float: left;
+    position: relative;
+    top: -250px;
+    left: -5px;
+    }
+
+#imgusuario{
+    margin: 0 auto 0 auto;
+    height: 40px;
+    float: right;
+    position: relative;
+    top: -48px;
+    right: 40px;
+    }
+
+/*Nav*/
+nav
+    {
+        background: rgb(242,53,155);
+        background: linear-gradient(90deg, rgba(242,53,155,0.8911939775910365) 1%, 
+        rgba(127,41,224,0.7791491596638656) 50%, rgba(246,43,163,0.938813025210084) 99%);
+        min-height: 2.2em;
+        text-align: center;
+        padding-top: 0px;
+        box-sizing: border-box;
+    }
+
+nav a{ /*control de letras del menú*/
+    text-decoration:none;
+    font-size:17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#fff;
+    }
+          
+nav li{ 
+    /*Control de cuadros del menú*/
+    display:inline-block;
+    width: 7.5em;
+    height: 2.0em;
+    padding:5px 10px;
+    padding-top: 20px;
+    text-align:center;
+    color:#fff; /*letra del cuadro*/
+    position:relative;
+    nav-left: 10px;
+}
+          
+nav li:hover{ 
+    /* Al pasar el cursor cambia de color*/
+    background-color:rgb(255, 130, 255);
+    border-radius: 6px;
+    }
+          
+nav li>ul{
+    display:none;
+    }
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:56px;
+    left:0px;
+    background-image: radial-gradient(circle at 50% -20.71%, #fe8f62 0,
+    #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, 
+    #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 
+    75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%);
+    opacity: .9;
+    } 
+
+section
+    {
+    width: 100%;
+    float: none;
+    margin-left: -105px;
+    }
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    margin-top: 25px;  
+    margin-left: 520px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    padding-right: 30px;
+    padding-left: 30px; 
+    background-image: linear-gradient(to right top, #416fb5, #4d569b, #523d7e, #512360, #4a0441);
+    box-shadow: 7px 10px 35px #000000;
+    }
+   
+input{
+    background-color: #fbfbfb; 
+    border-radius: 5px;  
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    background: transparent;
+    color:#fff;
+    }
+      
+textarea{
+    background-color: #fbfbfb; 
+    width: 439px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+    background: transparent;
+    color: #fff;
+    }
+    
+label{
+    display: block; 
+    float: center;  
+    }
+
+.logo img{
+    width: 130px;
+    margin-left: 160px;
+    overflow:hidden;
+    }
+
+.logo img:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+       
+#button{
+    width: 30%;   
+    height: 40px;  
+    margin-bottom: 8px;
+    background-color: #4bb4b8; 
+    border-color: #f3eea8; 
+    border-style: solid; 
+    border-radius: 10px;  
+    cursor: pointer;
+    position: relative;
+    float: right;
+    bottom: 200px;
+    font-family: Tahoma;
+    font-size: 9pt;
+    font-weight: bold;
+    }
+
+    #button:hover {
+        background: #860a8a;
+      }
+
+
+          
+#limpiar{
+    width: 30%;   
+    height: 40px;  
+    margin-bottom: 8px;
+    background-color: #4bb4b8; 
+    border-color: #f3eea8; 
+    border-style: solid; 
+    border-radius: 10px;  
+    cursor: pointer;
+    position: relative;
+    float: right;
+    bottom: 150px;
+    left: 138px;
+    font-family: Tahoma;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+#limpiar:hover {
+    background: #61096d;
+  }
+
+button:hover, button:focus {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 10px rgb(255, 170, 170);
+    transition: all 0.2s ease;
+    }
+
+button p{
+    color: #fff; 
+    font-size: 17px;
+    font-family: Tahoma;
+    }
+      
+span{
+    color: #d40707; 
+    font-size: 20px;
+    }
+      
+.aviso{
+    font-size: 13px;  
+    color: #fff;  
+    }
+
+@font-face {
+    font-family: Abril Fatface;
+    src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+}
+    
+h3  {
+    font-size: 20px; 
+    padding-bottom: 30px; 
+    text-align: center;
+    color: rgb(161, 246, 252);
+    text-shadow: 0.1em 0.1em #333;  
+    font-family: Abril Fatface; 
+}
+      
+   p{
+    font-size: 14px; 
+    color: #fafafa;
+    font-family: Tahoma; 
+    }
+
+    #textopromedio{
+        font-size: 12pt; 
+        color: #dff3f7;
+        font-family: Tahoma;
+        font-weight: bold; 
+        }
+          
+::-webkit-input-placeholder {
+       color: #a8a8a8;
+    }
+      
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+    }
+      
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #4876d8;
+    }
+      
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #4876d8;
+    }
+
+footer
+    {
+    clear:both;
+    background-color: #090981;
+    opacity: .8;
+    }
+
+footer
+    {
+    text-align: center;
+    font-size: 0.8em;
+    color: #000000;
+    padding: 30px;
+    }
+
+#textofooter{
+    font-size: 15px;
+    color: #fff;
+}

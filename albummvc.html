@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="images/favicon.png" type="images/png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="robots" content="Index, Follow"/>
+    <meta name="description" lang="es" content="Proyecto Web de Videojuegos Mugen" />
+    <meta name="keywords" content="Videojuegos, Mugen, Sitio, Noticias, Tecnología, Plataforma"/>
+    <meta name="revised" content="03/11/2021" />
+    <meta http-equiv="refresh" content="64"/>
+    <meta name="copyright" content="CardulceGame"/>
+    <meta name="revisit" content="1"/>
+    <meta name="organization" content="CardulGame"/>
+    <meta name="robots" content="follow"/>
+    <meta name="distribution" content="global"/>
+
+    <style type="text/css">
+      body{
+          margin:0px;
+          padding: 0px;
+          background-image: radial-gradient(circle at 37.72% 119.64%, #a4d8ec 0,
+          #a7d7ef 6.25%, #abd6f1 12.5%, #b0d5f3 18.75%, #b5d3f4 25%, #bbd2f4 
+          31.25%, #c1d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, 
+          #d9caed 62.5%, #dec8ea 68.75%, #e3c7e7 75%, #e8c6e3 81.25%, #ecc5df 87.5%,
+          #efc4da 93.75%, #f2c4d6 100%);
+      }
+      header{
+        background-image: linear-gradient(to bottom, #051937, #1a3762, #2e5891, #417cc3, #52a2f7);
+        text-align: center;
+        text-decoration: bold;
+        font-size: 18px;
+        color:#ffffff;
+        height: 140px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #cardul{
+      width: 280px;
+      height: 280;
+      position: relative;
+      bottom: 80px;
+    }
+
+    #home{
+      position: relative;
+      width: 50px;
+      height: 50px;
+      bottom: 100px;
+      left: 20px;
+     
+    }
+
+footer
+    {
+    text-align: center;
+    font-size: 0.8em;
+    color: #000000;
+    padding: 10px;
+    clear:both;
+    background-color: #090981;
+    opacity: .8;
+    }
+
+#textofooter{
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+}
+    </style>
+
+    <!-- Bootstrap -->
+     <!-- https://www.bootstrapcdn.com/-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+
+      crossorigin="anonymous"
+    />
+
+    <title> Album con MVC VideojuegosMugen </title>
+    
+  </head>
+  <header>  <img id="cardul" src="images/cardulgame.png"> </header>
+  <a  href="index.html"><img id="home" src="images/home.png" >  </a> 
+  <body>
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-4 order-md-1 mb-4">
+          <h4 style="font-weight: bold;">Lista de Videojuegos Mugen</h4>
+          <ul id="car-list" class="list-group mb-3"></ul>
+        </div>
+        <div class="col-md-8 order-md-2">
+          <div id="car">
+            <div class="row">
+              <h2
+                class="text-center display-4 font-weight-bold col"
+                id="car-name"
+              ></h2>
+              <div class="text-center display-4 col">
+                <p>
+                  Conteo de Votos:
+                  <span id="car-count"></span>
+                </p>
+              </div>
+            </div>
+            <img
+              style="width: 100%; margin: auto; margin-bottom: 70px; border-radius: 10px;"
+              id="car-img"
+              src=""
+              alt="muscle car"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <script src="js/app.js"></script>
+
+    <footer>
+      <p id="textofooter"> © 2021 Todos los Derechos Reservados CardulGame</p>
+  </footer>
+  </body>
+</html>
